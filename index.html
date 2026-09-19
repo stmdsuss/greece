@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0c1413" />
+  <title>테메노스 — 당신만의 신전</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="주요 메뉴">
+      <a class="brand" href="#" aria-label="테메노스 홈">
+        <span class="brand-mark">Θ</span>
+        <span><strong>TEMENOS</strong><small>당신만의 신전</small></span>
+      </a>
+      <nav>
+        <button class="nav-item active" data-page="temple"><span>⌂</span><b>신전</b></button>
+        <button class="nav-item" data-page="calendar"><span>☼</span><b>운명의 달력</b></button>
+        <button class="nav-item" data-page="records"><span>◇</span><b>신탁록</b><em>3</em></button>
+        <button class="nav-item" data-page="altar"><span>♙</span><b>나의 제단</b></button>
+      </nav>
+      <div class="affinity-card">
+        <span class="eyebrow">신과의 인연</span>
+        <div><i>☼</i><p><strong>아폴론</strong><small>인연 3단계</small></p><b>68%</b></div>
+        <div class="meter"><span></span></div>
+      </div>
+      <button class="profile-chip">
+        <span class="avatar mini">O</span>
+        <span><strong>오디세우스</strong><small>낯선 길을 걷는 자</small></span>
+        <b>···</b>
+      </button>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="mobile-brand" aria-label="메뉴">Θ</button>
+        <div class="stardust">✦&nbsp;&nbsp; 오늘, 별들이 당신의 질문을 기다립니다</div>
+        <div class="top-actions"><button aria-label="알림">♢<span></span></button><button class="moon" aria-label="테마 변경">☾</button></div>
+      </header>
+
+      <section id="temple" class="page active">
+        <div class="hero">
+          <div class="stars" aria-hidden="true"></div>
+          <div class="hero-content">
+            <div class="portrait-wrap">
+              <div class="orbit one"></div><div class="orbit two"></div>
+              <div class="portrait"><span>Ο</span></div>
+              <div class="constellation">✦<i></i>✧</div>
+            </div>
+            <span class="eyebrow gold">나의 수호 영웅</span>
+            <h1>오디세우스</h1>
+            <p class="hero-quote">“낯선 길에서도 방법을 찾는 자”</p>
+            <p class="hero-copy">당신의 지혜는 가장 어두운 바다에서도<br>돌아갈 길을 발견합니다.</p>
+          </div>
+          <div class="column left"></div><div class="column right"></div>
+        </div>
+
+        <section class="oracle-cta">
+          <span class="laurel">⌇</span>
+          <p>마음속에 오래 머문 질문이 있나요?</p>
+          <h2>신에게 길을 묻다</h2>
+          <button id="startOracle" class="primary-btn"><span>✦</span> 신탁을 구하십시오 <small>첫 신탁은 무료입니다</small></button>
+          <div class="steps"><span class="active"></span><span></span><span></span><span></span><span></span><span></span><p>질문 &nbsp;·&nbsp; 제물 &nbsp;·&nbsp; 접시 &nbsp;·&nbsp; 의식 &nbsp;·&nbsp; 신탁 &nbsp;·&nbsp; 해석</p></div>
+        </section>
+
+        <section class="today-grid">
+          <article class="omen-card">
+            <div class="card-heading"><div><span class="eyebrow">TODAY'S OMEN</span><h3>오늘의 징조</h3></div><span class="date">9월 19일 · 토요일</span></div>
+            <div class="omen-body">
+              <div class="sun-symbol">☼<span class="ring"></span></div>
+              <div><span class="eyebrow gold">태양과 수성의 조우</span><blockquote>“말하지 않은 것 속에<br>오늘의 답이 있습니다.”</blockquote><p>서두르기보다 상대의 말을 끝까지 들어보세요.<br>뜻밖의 문장이 오래된 고민을 비춥니다.</p></div>
+            </div>
+            <button class="text-btn">운명의 달력에서 자세히 보기 <span>→</span></button>
+          </article>
+          <article class="record-card">
+            <div class="card-heading"><div><span class="eyebrow">LAST ORACLE</span><h3>최근의 신탁</h3></div><span class="sealed">기록됨</span></div>
+            <div class="record-meta"><span>선택 · 전환</span><span>3일 전</span></div>
+            <p class="question">“새로운 제안을 받아들여도 될까요?”</p>
+            <div class="oracle-quote"><i>“</i><p>바람이 등을 미는 때에도<br>발밑의 돌을 먼저 살펴라.</p></div>
+            <div class="record-foot"><span>☼ 아폴론의 신탁</span><button>다시 보기 →</button></div>
+          </article>
+        </section>
+
+        <section class="journey">
+          <span class="eyebrow gold">YOUR JOURNEY</span><h2>당신의 신전은 기억합니다</h2>
+          <div class="stats"><div><strong>3</strong><span>받은 신탁</span></div><i></i><div><strong>2</strong><span>바친 제물</span></div><i></i><div><strong>18</strong><span>함께한 날</span></div></div>
+          <p>당신이 길을 물었던 순간들은<br>하나의 별자리가 되어가고 있습니다.</p>
+        </section>
+      </section>
+
+      <section id="placeholder" class="page placeholder-page">
+        <span class="eyebrow gold">COMING SOON</span><h1 id="placeholderTitle">운명의 달력</h1><p>신전의 이 공간은 아직 준비 중입니다.</p>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="모바일 메뉴">
+      <button class="active" data-page="temple"><span>⌂</span>신전</button><button data-page="calendar"><span>☼</span>운명의 달력</button><button class="oracle-fab" id="mobileOracle"><span>✦</span>신탁</button><button data-page="records"><span>◇</span>신탁록</button><button data-page="altar"><span>♙</span>나의 제단</button>
+    </nav>
+  </div>
+
+  <div id="ritualModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="ritualTitle">
+    <div class="modal-panel">
+      <button id="closeModal" class="close-btn" aria-label="닫기">×</button>
+      <div class="ritual-progress"><span class="active"></span><span></span><span></span><span></span></div>
+      <div id="ritualContent"></div>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
